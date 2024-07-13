@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Rock, scissor, paper</title>
+</head>
+<body>
+    <main id="game">
+        <section id="score">
+            <div id="round">
+                <span id="name">You</span>
+                <textarea id="score_human" readonly>0</textarea>
+            </div>
+            <div id="round">
+                <span id="name">PC</span>
+                <textarea id="score_pc" readonly>0</textarea>
+            </div>
+        </section>
+
+        <section>
+            <div id="choice">
+                <button id="rock" onclick="humanChoice(0)"><img src="/0.png" alt=""></button>
+                <button id="scissor" onclick="humanChoice(1)"><img src="/1.png" alt=""></button>
+                <button id="paper" onclick="humanChoice(2)"><img src="/2.png" alt=""></button>
+            </div>
+            <div id="panel">
+                <span>The computer chose:</span>
+                <img src="" id="pc_img">
+                <span id="result"></span>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
